@@ -1,0 +1,39 @@
+name:           google-mail-filters
+version:        0.0.1.0
+synopsis:       Write GMail filters and output to importable XML
+description:
+    Organise your Google Mail filters as a Haskell EDSL, and produce XML
+    output that can be imported from the GMail web interface.
+    .
+    See <http://github.com/liyang/google-mail-filters/example.hs>.
+homepage:       https://github.com/liyang/google-mail-filters
+license:        BSD3
+license-file:   LICENSE
+author:         Liyang HU
+maintainer:     google-mail-filters@liyang.hu
+copyright:      © 2013 Liyang HU
+category:       Data, Web, XML
+build-type:     Simple
+cabal-version:  >= 1.8
+stability:      experimental
+extra-source-files:
+    example.hs
+
+source-repository head
+    type:     git
+    location: http://github.com/liyang/google-mail-filters
+
+library
+    hs-source-dirs: src
+    exposed-modules:
+        Data.Google.Mail.Filters
+    build-depends:
+        base >= 4.5 && <= 9000,
+        containers >= 0.4,
+        google-search >= 0.1,
+        old-locale >= 1.0,
+        text >= 0.11,
+        time >= 1.4,
+        xml-conduit >= 0.7
+    ghc-options: -Wall
+

@@ -1,0 +1,13 @@
+language: haskell
+
+before_install:
+  - ./.travis.install-deps --enable-tests
+
+install:
+  - cabal configure --enable-tests
+  - cabal build
+
+script:
+  - cabal test --show-details=always
+  - ./.travis.hlint
+
