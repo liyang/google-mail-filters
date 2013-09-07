@@ -5,7 +5,7 @@ description:
     Organise your Google Mail filters as a Haskell EDSL, and produce XML
     output that can be imported from the GMail web interface.
     .
-    See <http://github.com/liyang/google-mail-filters/example.hs>.
+    See <https://github.com/liyang/google-mail-filters/blob/master/example.hs>.
 homepage:       https://github.com/liyang/google-mail-filters
 license:        BSD3
 license-file:   LICENSE
