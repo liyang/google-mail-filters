@@ -37,3 +37,14 @@ library
         xml-conduit >= 0.7
     ghc-options: -Wall
 
+test-suite example
+    type: exitcode-stdio-1.0
+    main-is: example.hs
+    build-depends:
+        base,
+        google-mail-filters,
+        google-search,
+        text,
+        time,
+        xml-conduit
+
