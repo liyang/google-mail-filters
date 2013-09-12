@@ -1,5 +1,5 @@
 name:           google-mail-filters
-version:        0.0.1.0
+version:        0.0.1.1
 synopsis:       Write GMail filters and output to importable XML
 description:
     Organise your Google Mail filters as a Haskell EDSL, and produce XML
@@ -30,7 +30,7 @@ library
     build-depends:
         base >= 4.5 && <= 9000,
         containers >= 0.4,
-        google-search >= 0.1,
+        google-search >= 0.1.0.1,
         old-locale >= 1.0,
         text >= 0.11,
         time >= 1.4,
