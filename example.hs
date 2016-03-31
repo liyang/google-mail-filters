@@ -1,9 +1,12 @@
 #! /usr/bin/env runhaskell
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# OPTIONS_GHC -Wall #-}
 
 import Prelude
+#if !MIN_VERSION_base(4,8,0)
 import Control.Applicative
+#endif
 import qualified Data.Text.Lazy as TL
 import qualified Data.Text.Lazy.Builder as B
 import qualified Data.Text.Lazy.IO as TL
