@@ -1,5 +1,5 @@
 name:           google-mail-filters
-version:        0.0.1.1
+version:        0.0.1.2
 synopsis:       Write GMail filters and output to importable XML
 description:
     Organise your Google Mail filters as a Haskell EDSL, and produce XML
