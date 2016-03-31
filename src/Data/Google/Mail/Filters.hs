@@ -15,7 +15,9 @@ import qualified Data.Text.Lazy as TL
 import qualified Data.Text.Lazy.Builder as B
 import Data.Time.Clock
 import Data.Time.Format
-import System.Locale
+#if !MIN_VERSION_time(1,5,0)
+import System.Locale (defaultTimeLocale)
+#endif
 import Text.XML
 
 import Language.Google.Search.Simple as Search
