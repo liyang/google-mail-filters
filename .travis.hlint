@@ -1,6 +1,0 @@
-#! /bin/bash
-
-SRC="$(sed -ne 's/^\W*hs-source-dirs:\W*\(.*\)$/\1/p' *.cabal)"
-hlint --cpp-simple ${SRC:-.} \
-	-i "Use if"
-
